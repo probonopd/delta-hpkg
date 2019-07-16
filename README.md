@@ -71,10 +71,10 @@ Someone who understands the inner workings of `.hpkg` might need to have a deep 
 
 ## Prior Art
 
-* https://github.com/puckipedia/HaikuDeltaPKG
-* https://www.tarsnap.com/efficiency.html, details: https://www.tarsnap.com/deduplication-explanation
+* HaikuDeltaPKG, https://github.com/puckipedia/HaikuDeltaPKG
+* zsync, http://zsync.moria.org.uk/paper/
+* Tarsnap deduplication, https://www.tarsnap.com/efficiency.html, details: https://www.tarsnap.com/deduplication-explanation
 
 ## References
 
-* https://github.com/haiku/haiku/blob/master/docs/develop/packages/FileFormat.rst
-* http://zsync.moria.org.uk/paper/
+* hpkg file format, https://github.com/haiku/haiku/blob/master/docs/develop/packages/FileFormat.rst
