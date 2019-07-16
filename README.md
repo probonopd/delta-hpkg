@@ -26,8 +26,12 @@ hpkg currently uses https://www.zlib.net/ compression although Haiku wants to mo
 Work in progress. Currently Linux is used because the tools are not on Haiku yet.
 
 ```
-# Files prepared with
-sudo apt install zsync
+#
+# Prepare files
+#
+
+wget https://github.com/AppImage/zsync2/releases/download/continuous/zsyncmake2-137-bacc238-x86_64.AppImage
+chmod +x *.AppImage
 
 # GitHub renames files when uploaded, this breaks zsync; hence workaround
 mv haiku-r1~beta1_hrev53233-1-x86_64.hpkg haiku-r1.beta1_hrev53233-1-x86_64.hpkg
@@ -36,12 +40,14 @@ mv haiku-r1~beta1_hrev53259_3-1-x86_64.hpkg haiku-r1.beta1_hrev53259_3-1-x86_64.
 zsyncmake haiku-r1.beta1_hrev53233-1-x86_64.hpkg 
 zsyncmake haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg
 
+#
 # To test
+#
+
 wget https://github.com/AppImage/zsync2/releases/download/continuous/zsync2-137-bacc238-x86_64.AppImage
-chmod +x ./zsync2-137-bacc238-x86_64.AppImage
+chmod +x *.AppImage
 
 rm haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg
 
 ./zsync2-*.AppImage https://github.com/probonopd/delta-hpkg/releases/download/testing/haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg.zsync -i ./haiku-r1.beta1_hrev53233-1-x86_64.hpkg
-
 ```
