@@ -61,6 +61,8 @@ rm haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg
 
 Compared to what we have seen with AppImage, (squashfs), `Usable data from seed files: 1.185383%` is an __extremely__ bad ratio. Why?
 
+According to @waddlesplash, `.hpkg`files are not straight zlib, "they are chunked and indexed".
+
 Maybe we need to play with some zsyncmake parameters, or (worst case) we must implement knowledge about the inner workings of the files to be checksummed in `zsyncmake2` and `zsync2`.
 
 Someone who understands the inner workings of `.hpkg` might need to have a deep look at http://zsync.moria.org.uk/paper/. Strangely, we did not have to go through those hoops for AppImage, which uses squashfs and where we see up to >90% usable data from seed files without having implemented any knowledge about the inner workings of the files to be checksummed.
