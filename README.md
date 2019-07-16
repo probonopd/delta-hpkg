@@ -63,4 +63,4 @@ Compared to what we have seen with AppImage, (squashfs), `Usable data from seed 
 
 Maybe we need to play with some zsyncmake parameters, or (worst case) we must implement knowledge about the inner workings of the files to be checksummed in `zsyncmake2` and `zsync2`.
 
-Someone who understands the inner workings of `.hpkg` might need to have a deep look at http://zsync.moria.org.uk/paper/. Strangely, we did not have to go through those hoops for AppImage, which uses squashfs.
+Someone who understands the inner workings of `.hpkg` might need to have a deep look at http://zsync.moria.org.uk/paper/. Strangely, we did not have to go through those hoops for AppImage, which uses squashfs and where we see up to >90% usable data from seed files without having implemented any knowledge about the inner workings of the files to be checksummed.
