@@ -25,6 +25,8 @@ hpkg currently uses https://www.zlib.net/ compression although Haiku wants to mo
 
 Work in progress. Currently Linux is used because the tools are not on Haiku yet.
 
+I have prepared some files for testing and stored them on GitHub Releases:
+
 ```
 #
 # Prepare files
@@ -40,6 +42,11 @@ mv haiku-r1~beta1_hrev53259_3-1-x86_64.hpkg haiku-r1.beta1_hrev53259_3-1-x86_64.
 zsyncmake haiku-r1.beta1_hrev53233-1-x86_64.hpkg 
 zsyncmake haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg
 
+```
+
+These can now be used for testing:
+
+```
 #
 # To test
 #
@@ -53,3 +60,5 @@ rm haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg
 ```
 
 Compared to what we have seen with AppImage, (squashfs), `Usable data from seed files: 1.185383%` is an __extremely__ bad ratio. Why?
+
+Maybe we need to play with some zsyncmake parameters, or (worst case) we must implement knowledge about the inner workings of the files to be checksummed in `zsyncmake2` and `zsync2`.
