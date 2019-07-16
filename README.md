@@ -71,7 +71,8 @@ Someone who understands the inner workings of `.hpkg` might need to have a deep 
 
 ## Prior Art
 
-https://github.com/puckipedia/HaikuDeltaPKG
+* https://github.com/puckipedia/HaikuDeltaPKG
+* https://www.tarsnap.com/efficiency.html
 
 ## References
 
