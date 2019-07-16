@@ -51,3 +51,5 @@ rm haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg
 
 ./zsync2-*.AppImage https://github.com/probonopd/delta-hpkg/releases/download/testing/haiku-r1.beta1_hrev53259_3-1-x86_64.hpkg.zsync -i ./haiku-r1.beta1_hrev53233-1-x86_64.hpkg
 ```
+
+Compared to what we have seen with AppImage, (squashfs), `Usable data from seed files: 1.185383%` is an __extremly__ bad ratio. Why?
